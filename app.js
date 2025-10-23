@@ -52,4 +52,10 @@ function gerarNumeroAleatorio() {
     }
 }
 
-function reinciarJogo
+function reinciarJogo() {
+    numeroSecreto = gerarNumeroAleatorio();
+    limparCampo();
+    tentativas = 1;
+    exibirMensagemInicial();
+    document.getElementById('reiniciar').setAttribute('disable', true)
+}
